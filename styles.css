@@ -32,7 +32,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5); /* filtre sombre */
+  background: rgba(0,0,0,0.5);
 }
 
 .hero-content {
@@ -59,15 +59,16 @@ body {
 
 /* Formulaire */
 .card {
-  background: rgba(255, 255, 255, 0.55); /* plus transparent */
+  background: rgba(255, 255, 255, 0.35);
   padding: 16px;
   border-radius: 12px;
-  color: #222;
+  color: rgba(34, 34, 34, 0.85);
   text-align: left;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  backdrop-filter: blur(6px);
-  max-width: 80%; /* réduit de 20% */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  max-width: 60%; /* 🔥 réduit de 20% par rapport à avant */
   margin: 0 auto;
+  border: 1px solid rgba(255,255,255,0.25);
 }
 
 .field {
@@ -78,21 +79,28 @@ body {
   display: block;
   margin-bottom: 5px;
   font-weight: 600;
+  color: rgba(34, 34, 34, 0.8);
 }
 
 .field input,
 .field textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(204, 204, 204, 0.4);
   border-radius: 6px;
   font-size: 1rem;
-  background: rgba(255, 255, 255, 0.9); /* champs bien lisibles */
+  background: rgba(255, 255, 255, 0.4);
+  color: rgba(34, 34, 34, 0.9);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(100, 100, 100, 0.6);
 }
 
 .btn {
   display: inline-block;
-  background: #ff6600;
+  background: rgba(255, 102, 0, 0.9);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -104,21 +112,21 @@ body {
 }
 
 .btn:hover {
-  background: #e65c00;
+  background: rgba(230, 92, 0, 0.9);
 }
 
 .form-note {
   font-size: 0.85rem;
   margin-top: 10px;
-  color: #333;
+  color: rgba(50, 50, 50, 0.7);
 }
 
 /* Footer */
 .footer {
   text-align: center;
   padding: 15px;
-  background: #222;
-  color: #aaa;
+  background: rgba(34, 34, 34, 0.8);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 0.9rem;
 }
 
@@ -138,7 +146,7 @@ body {
 
   .card {
     padding: 14px;
-    max-width: 85%;
+    max-width: 70%; /* réduit aussi sur tablette */
   }
 
   .btn {
@@ -170,15 +178,16 @@ body {
   }
 
   .card {
-    max-width: 90%;
+    max-width: 80%; /* 🔥 réduit sur mobile */
     padding: 12px;
-    background: rgba(255, 255, 255, 0.5); /* encore plus transparent */
+    background: rgba(255, 255, 255, 0.3);
   }
 
   .field input,
   .field textarea {
     font-size: 0.9rem;
     padding: 8px;
+    background: rgba(255, 255, 255, 0.35);
   }
 
   .btn {
