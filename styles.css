@@ -59,13 +59,15 @@ body {
 
 /* Formulaire */
 .card {
-  background: rgba(255, 255, 255, 0.65); /* blanc à 65% de transparence */
-  padding: 20px;
-  border-radius: 10px;
-  color: #222; /* texte plus foncé pour contraste */
+  background: rgba(255, 255, 255, 0.55); /* plus transparent */
+  padding: 16px;
+  border-radius: 12px;
+  color: #222;
   text-align: left;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  backdrop-filter: blur(5px); /* effet verre dépoli */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  backdrop-filter: blur(6px);
+  max-width: 80%; /* réduit de 20% */
+  margin: 0 auto;
 }
 
 .field {
@@ -85,7 +87,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
-  background: rgba(255, 255, 255, 0.9); /* champs lisibles */
+  background: rgba(255, 255, 255, 0.9); /* champs bien lisibles */
 }
 
 .btn {
@@ -122,4 +124,65 @@ body {
 
 /* ✅ Responsive */
 @media (max-width: 768px) {
-  .br
+  .brand {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .card {
+    padding: 14px;
+    max-width: 85%;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 10px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .brand {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .card {
+    max-width: 90%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.5); /* encore plus transparent */
+  }
+
+  .field input,
+  .field textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
