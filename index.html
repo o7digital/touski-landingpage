@@ -22,7 +22,9 @@
 
           <form id="notify-form" class="card" aria-label="Formulaire de notification" action="https://formspree.io/f/mrbyqqgk" method="POST" novalidate>
             <input type="hidden" name="_subject" value="Nouvelle inscription — Touski.online" />
-            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+            <!-- Champ honeypot anti-spam masqué -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none;" aria-hidden="true" />
+
             <div class="field">
               <label for="name">Nom</label>
               <input id="name" name="name" type="text" autocomplete="name" placeholder="Votre nom" />
@@ -34,7 +36,7 @@
             </div>
 
             <div class="field">
-              <label for="message">Message (optionnel)</label>
+              <label for="message">Laissez-nous un message s’il vous plaît</label>
               <textarea id="message" name="message" rows="3" placeholder="Dites-nous ce que vous cherchez"></textarea>
             </div>
 
