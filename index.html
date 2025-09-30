@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Touski.online — Site en construction</title>
+    <meta name="description" content="Touski.online — Tout ce qui manque pour son chez soi. Inscrivez-vous pour être averti du lancement." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" role="banner" aria-label="Site en construction">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h1 class="brand">Touski.online</h1>
+          <p class="tagline">Site en construction</p>
+          <p class="subtitle">Inscrivez-vous pour être averti du lancement.</p>
+
+          <form id="notify-form" class="card" aria-label="Formulaire de notification" action="https://formspree.io/f/mrbyqqgk" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Nouvelle inscription — Touski.online" />
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+            <div class="field">
+              <label for="name">Nom</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Votre nom" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="vous@example.com" required />
+            </div>
+
+            <div class="field">
+              <label for="message">Message (optionnel)</label>
+              <textarea id="message" name="message" rows="3" placeholder="Dites-nous ce que vous cherchez"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Tenir-moi au courant</button>
+            <p class="form-note">En cliquant, vous acceptez d’être contacté au sujet du lancement.</p>
+            <p id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Touski.online — Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
